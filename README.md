@@ -1,5 +1,7 @@
 # DNS-tools
 HPC Tools for DNS (Direct Numerical Simulations)
 
-- [ ] `sh`: bash scripts
-- [ ] `f90`: fortran scripts
+- [ ] `slurm`: slurm launching scripts
+- [ ] `utils`: utilities for initiate fields and particles
+- [ ] `video`: scripts for making videos and images
+ 
