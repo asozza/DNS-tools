@@ -1,6 +1,7 @@
-! change the number of procs
+! change the number of processors/slices
 program change_proc
   implicit none
+
   integer, parameter :: nx=256,ny=nx,nz=nx
   integer, parameter :: npe1=64,nzl1=nz/npe1
   integer, parameter :: npe2=128,nzl2=nz/npe2

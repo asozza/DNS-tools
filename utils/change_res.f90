@@ -1,5 +1,5 @@
-! change the number of procs
-program change_proc
+! increase grid resolution by a factor 2
+program change_res
   implicit none
   
   integer, parameter :: nx=256,ny=nx,nz=nx
@@ -59,4 +59,4 @@ program change_proc
      
   enddo
   
-end program change_proc
+end program change_res

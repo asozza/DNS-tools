@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Check if a keyword is provided
 if [ "$#" -ne 4 ]; then
     echo " "

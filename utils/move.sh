@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dest=/marconi_work/IscrC_dusk/256/hyp/0.0/Frames/
+dest=some/folder/
 
 for i in {0..3..2}
 do

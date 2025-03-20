@@ -1,6 +1,7 @@
-! prende campo parallelo e lo rende seriale
-program unite
+! reunite slices into a file
+program reunite
   implicit none
+  
   integer, parameter :: nx=256,ny=nx,nz=nx
   integer, parameter :: npe=64,nzl=nz/npe
   real*8, dimension(nx,ny,nz) :: te
@@ -21,7 +22,7 @@ program unite
   do ipe=0,NPE-1
      
      allocate(z4(nx,ny,nzl))
-     write(filename,"('rho.',i3.3,'.',i3.3)")ifr,ipe
+     write(filename,"('te.',i3.3,'.',i3.3)")ifr,ipe
      open(unit=1,file=filename,action='read',form='unformatted')
      read(1)z4
      close(1)  
@@ -37,10 +38,10 @@ program unite
      
   enddo
   
-  ! write reunited fields
-  write(filename,'("./New/rho."i3.3)')ifr
+  ! write reunited field
+  write(filename,'("./New/te."i3.3)')ifr
   open(1,file=filename,form="unformatted")
   write(1)real(te)
   close(1)
   
-end program unite
+end program reunite
